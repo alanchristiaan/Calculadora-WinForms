@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Form1
+    partial class frmCalculadora
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,15 +29,18 @@
         private void InitializeComponent()
         {
             txtNumeros = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
+            btnSumar = new Button();
+            btnRestar = new Button();
+            btnPotencia = new Button();
+            btnRaizCuadrada = new Button();
+            btnDividir = new Button();
+            btnMultiplicar = new Button();
+            btnLogaritmo = new Button();
+            btnLimpiar = new Button();
+            btnBorrar = new Button();
+            lblCalculadora = new Label();
+            btnIgual = new Button();
+            lblResultado = new Label();
             SuspendLayout();
             // 
             // txtNumeros
@@ -49,114 +52,153 @@
             txtNumeros.Size = new Size(376, 53);
             txtNumeros.TabIndex = 0;
             // 
-            // button1
+            // btnSumar
             // 
-            button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(62, 107);
-            button1.Name = "button1";
-            button1.Size = new Size(40, 39);
-            button1.TabIndex = 1;
-            button1.Text = "+";
-            button1.UseVisualStyleBackColor = true;
+            btnSumar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSumar.Location = new Point(62, 107);
+            btnSumar.Name = "btnSumar";
+            btnSumar.Size = new Size(40, 39);
+            btnSumar.TabIndex = 1;
+            btnSumar.Text = "+";
+            btnSumar.UseVisualStyleBackColor = true;
+            btnSumar.Click += btnSumar_Click_1;
             // 
-            // button2
+            // btnRestar
             // 
-            button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(108, 107);
-            button2.Name = "button2";
-            button2.Size = new Size(40, 39);
-            button2.TabIndex = 2;
-            button2.Text = "-";
-            button2.UseVisualStyleBackColor = true;
+            btnRestar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRestar.Location = new Point(108, 107);
+            btnRestar.Name = "btnRestar";
+            btnRestar.Size = new Size(40, 39);
+            btnRestar.TabIndex = 2;
+            btnRestar.Text = "-";
+            btnRestar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnPotencia
             // 
-            button3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(302, 107);
-            button3.Name = "button3";
-            button3.Size = new Size(65, 39);
-            button3.TabIndex = 3;
-            button3.Text = "pow";
-            button3.UseVisualStyleBackColor = true;
+            btnPotencia.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPotencia.Location = new Point(302, 107);
+            btnPotencia.Name = "btnPotencia";
+            btnPotencia.Size = new Size(65, 39);
+            btnPotencia.TabIndex = 3;
+            btnPotencia.Text = "pow";
+            btnPotencia.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnRaizCuadrada
             // 
-            button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(246, 107);
-            button4.Name = "button4";
-            button4.Size = new Size(50, 39);
-            button4.TabIndex = 4;
-            button4.Text = "sqr";
-            button4.UseVisualStyleBackColor = true;
+            btnRaizCuadrada.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRaizCuadrada.Location = new Point(246, 107);
+            btnRaizCuadrada.Name = "btnRaizCuadrada";
+            btnRaizCuadrada.Size = new Size(50, 39);
+            btnRaizCuadrada.TabIndex = 4;
+            btnRaizCuadrada.Text = "sqr";
+            btnRaizCuadrada.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnDividir
             // 
-            button5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.Location = new Point(200, 107);
-            button5.Name = "button5";
-            button5.Size = new Size(40, 39);
-            button5.TabIndex = 5;
-            button5.Text = "/";
-            button5.UseVisualStyleBackColor = true;
+            btnDividir.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDividir.Location = new Point(200, 107);
+            btnDividir.Name = "btnDividir";
+            btnDividir.Size = new Size(40, 39);
+            btnDividir.TabIndex = 5;
+            btnDividir.Text = "/";
+            btnDividir.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnMultiplicar
             // 
-            button6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.Location = new Point(154, 107);
-            button6.Name = "button6";
-            button6.Size = new Size(40, 39);
-            button6.TabIndex = 6;
-            button6.Text = "*";
-            button6.UseVisualStyleBackColor = true;
+            btnMultiplicar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMultiplicar.Location = new Point(154, 107);
+            btnMultiplicar.Name = "btnMultiplicar";
+            btnMultiplicar.Size = new Size(40, 39);
+            btnMultiplicar.TabIndex = 6;
+            btnMultiplicar.Text = "*";
+            btnMultiplicar.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnLogaritmo
             // 
-            button7.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.Location = new Point(373, 109);
-            button7.Name = "button7";
-            button7.Size = new Size(65, 39);
-            button7.TabIndex = 7;
-            button7.Text = "log()";
-            button7.UseVisualStyleBackColor = true;
+            btnLogaritmo.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogaritmo.Location = new Point(373, 109);
+            btnLogaritmo.Name = "btnLogaritmo";
+            btnLogaritmo.Size = new Size(65, 39);
+            btnLogaritmo.TabIndex = 7;
+            btnLogaritmo.Text = "log()";
+            btnLogaritmo.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnLimpiar
             // 
-            button8.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button8.Location = new Point(62, 152);
-            button8.Name = "button8";
-            button8.Size = new Size(110, 39);
-            button8.TabIndex = 8;
-            button8.Text = "CLEAR";
-            button8.UseVisualStyleBackColor = true;
+            btnLimpiar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLimpiar.Location = new Point(62, 152);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(110, 39);
+            btnLimpiar.TabIndex = 8;
+            btnLimpiar.Text = "CLEAR";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
-            // button9
+            // btnBorrar
             // 
-            button9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button9.Location = new Point(178, 152);
-            button9.Name = "button9";
-            button9.Size = new Size(110, 39);
-            button9.TabIndex = 9;
-            button9.Text = "DELETE";
-            button9.UseVisualStyleBackColor = true;
+            btnBorrar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBorrar.Location = new Point(178, 152);
+            btnBorrar.Name = "btnBorrar";
+            btnBorrar.Size = new Size(110, 39);
+            btnBorrar.TabIndex = 9;
+            btnBorrar.Text = "DELETE";
+            btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
             // 
-            // Form1
+            // lblCalculadora
+            // 
+            lblCalculadora.BackColor = SystemColors.ActiveCaptionText;
+            lblCalculadora.Font = new Font("Microsoft YaHei UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCalculadora.ForeColor = SystemColors.Control;
+            lblCalculadora.Location = new Point(64, 9);
+            lblCalculadora.Name = "lblCalculadora";
+            lblCalculadora.Size = new Size(374, 36);
+            lblCalculadora.TabIndex = 10;
+            lblCalculadora.Text = "Calculadora";
+            // 
+            // btnIgual
+            // 
+            btnIgual.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnIgual.Location = new Point(294, 152);
+            btnIgual.Name = "btnIgual";
+            btnIgual.Size = new Size(144, 39);
+            btnIgual.TabIndex = 11;
+            btnIgual.Text = "=";
+            btnIgual.UseVisualStyleBackColor = true;
+            btnIgual.Click += btnIgual_Click;
+            // 
+            // lblResultado
+            // 
+            lblResultado.BackColor = SystemColors.ActiveCaptionText;
+            lblResultado.Font = new Font("Microsoft YaHei UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblResultado.ForeColor = SystemColors.Control;
+            lblResultado.Location = new Point(62, 194);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(374, 36);
+            lblResultado.TabIndex = 12;
+            lblResultado.Text = "Resultado";
+            // 
+            // frmCalculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDarkDark;
             ClientSize = new Size(800, 450);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(lblResultado);
+            Controls.Add(btnIgual);
+            Controls.Add(lblCalculadora);
+            Controls.Add(btnBorrar);
+            Controls.Add(btnLimpiar);
+            Controls.Add(btnLogaritmo);
+            Controls.Add(btnMultiplicar);
+            Controls.Add(btnDividir);
+            Controls.Add(btnRaizCuadrada);
+            Controls.Add(btnPotencia);
+            Controls.Add(btnRestar);
+            Controls.Add(btnSumar);
             Controls.Add(txtNumeros);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "frmCalculadora";
+            Text = "Calculadora";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -164,14 +206,17 @@
         #endregion
 
         private TextBox txtNumeros;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
+        private Button btnSumar;
+        private Button btnRestar;
+        private Button btnPotencia;
+        private Button btnRaizCuadrada;
+        private Button btnDividir;
+        private Button btnMultiplicar;
+        private Button btnLogaritmo;
+        private Button btnLimpiar;
+        private Button btnBorrar;
+        private Label lblCalculadora;
+        private Button btnIgual;
+        private Label lblResultado;
     }
 }
