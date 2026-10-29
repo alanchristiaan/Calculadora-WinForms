@@ -45,7 +45,7 @@
             // 
             // txtNumeros
             // 
-            txtNumeros.Location = new Point(62, 48);
+            txtNumeros.Location = new Point(62, 87);
             txtNumeros.Multiline = true;
             txtNumeros.Name = "txtNumeros";
             txtNumeros.RightToLeft = RightToLeft.Yes;
@@ -55,7 +55,7 @@
             // btnSumar
             // 
             btnSumar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSumar.Location = new Point(62, 107);
+            btnSumar.Location = new Point(62, 146);
             btnSumar.Name = "btnSumar";
             btnSumar.Size = new Size(40, 39);
             btnSumar.TabIndex = 1;
@@ -66,67 +66,73 @@
             // btnRestar
             // 
             btnRestar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRestar.Location = new Point(108, 107);
+            btnRestar.Location = new Point(108, 146);
             btnRestar.Name = "btnRestar";
             btnRestar.Size = new Size(40, 39);
             btnRestar.TabIndex = 2;
             btnRestar.Text = "-";
             btnRestar.UseVisualStyleBackColor = true;
+            btnRestar.Click += btnRestar_Click;
             // 
             // btnPotencia
             // 
             btnPotencia.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPotencia.Location = new Point(302, 107);
+            btnPotencia.Location = new Point(302, 146);
             btnPotencia.Name = "btnPotencia";
             btnPotencia.Size = new Size(65, 39);
             btnPotencia.TabIndex = 3;
             btnPotencia.Text = "pow";
             btnPotencia.UseVisualStyleBackColor = true;
+            btnPotencia.Click += btnPotencia_Click;
             // 
             // btnRaizCuadrada
             // 
             btnRaizCuadrada.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRaizCuadrada.Location = new Point(246, 107);
+            btnRaizCuadrada.Location = new Point(246, 146);
             btnRaizCuadrada.Name = "btnRaizCuadrada";
             btnRaizCuadrada.Size = new Size(50, 39);
             btnRaizCuadrada.TabIndex = 4;
             btnRaizCuadrada.Text = "sqr";
             btnRaizCuadrada.UseVisualStyleBackColor = true;
+            btnRaizCuadrada.Click += btnRaizCuadrada_Click;
             // 
             // btnDividir
             // 
             btnDividir.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDividir.Location = new Point(200, 107);
+            btnDividir.Location = new Point(200, 146);
             btnDividir.Name = "btnDividir";
             btnDividir.Size = new Size(40, 39);
             btnDividir.TabIndex = 5;
             btnDividir.Text = "/";
             btnDividir.UseVisualStyleBackColor = true;
+            btnDividir.Click += btnDividir_Click;
             // 
             // btnMultiplicar
             // 
             btnMultiplicar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnMultiplicar.Location = new Point(154, 107);
+            btnMultiplicar.Location = new Point(154, 146);
             btnMultiplicar.Name = "btnMultiplicar";
             btnMultiplicar.Size = new Size(40, 39);
             btnMultiplicar.TabIndex = 6;
             btnMultiplicar.Text = "*";
             btnMultiplicar.UseVisualStyleBackColor = true;
+            btnMultiplicar.Click += btnMultiplicar_Click;
             // 
             // btnLogaritmo
             // 
             btnLogaritmo.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLogaritmo.Location = new Point(373, 109);
+            btnLogaritmo.Location = new Point(373, 148);
             btnLogaritmo.Name = "btnLogaritmo";
             btnLogaritmo.Size = new Size(65, 39);
             btnLogaritmo.TabIndex = 7;
             btnLogaritmo.Text = "log()";
             btnLogaritmo.UseVisualStyleBackColor = true;
+            btnLogaritmo.Click += btnLogaritmo_Click;
             // 
             // btnLimpiar
             // 
             btnLimpiar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLimpiar.Location = new Point(62, 152);
+            btnLimpiar.Location = new Point(62, 191);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(110, 39);
             btnLimpiar.TabIndex = 8;
@@ -137,7 +143,7 @@
             // btnBorrar
             // 
             btnBorrar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBorrar.Location = new Point(178, 152);
+            btnBorrar.Location = new Point(178, 191);
             btnBorrar.Name = "btnBorrar";
             btnBorrar.Size = new Size(110, 39);
             btnBorrar.TabIndex = 9;
@@ -159,7 +165,7 @@
             // btnIgual
             // 
             btnIgual.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnIgual.Location = new Point(294, 152);
+            btnIgual.Location = new Point(294, 191);
             btnIgual.Name = "btnIgual";
             btnIgual.Size = new Size(144, 39);
             btnIgual.TabIndex = 11;
@@ -172,7 +178,7 @@
             lblResultado.BackColor = SystemColors.ActiveCaptionText;
             lblResultado.Font = new Font("Microsoft YaHei UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblResultado.ForeColor = SystemColors.Control;
-            lblResultado.Location = new Point(62, 194);
+            lblResultado.Location = new Point(62, 233);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(374, 36);
             lblResultado.TabIndex = 12;
